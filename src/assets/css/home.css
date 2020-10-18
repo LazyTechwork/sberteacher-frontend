@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s; }
+
+a:hover {
+    background-size: 100% 1px;
+}
+
+input:focus, select:focus {
+    outline: none;
+}
+
+li {
+    white-space: nowrap;
+}
+
+.wrapper {
+    max-width: 1150px;
+    margin: auto;
+}
+
+
+/* header */
+
+.module-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.mod-l-head-logo {
+    width: 400px;
+}
+
+.module-list-profile {
+    width: 170px;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    margin-right: 20px;
+}
+
+.module-list-profile img {
+    width: 30px;
+}
+
+.create-module {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 20px;
+    font-size: 23px;
+    width: 300px;
+    background: #bae5ff;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.plus {
+    font-size: 40px;
+    margin-top: 4px;
+    font-weight: normal;
+}
+
+.create-module:hover {
+    background: lightskyblue;
+}
+
+/* main menu */
+
+
+.mod-l-main-search {
+    position: relative;
+    margin-top: 60px;
+}
+
+.mod-l-main-search input {
+    width: 100%;
+    height: 50px;
+    font-size: 10pt;
+    font-size: 20px;
+    float: left;
+    padding-left: 25px;
+    border-radius: 90px;
+    border: #838383 solid 2px;
+}
+
+.module-list-main input:focus{
+    border: dimgray 2px solid;
+    box-shadow: 0 0 10px 1px rgba(0, 0 , 0, 0.2);
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 10px;
+    right: 25px;
+    z-index: 1;
+    color: #4f5b66;
+}
+
+.created-modules {
+    padding-top: 80px;
+}
+
+.main-module {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    padding: 10px 20px;
+    background: #bae5ff;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+
+.main-module h6 {
+    font-size: 18px;
+    text-shadow: 0.05px 0 0.05px #000,
+    0 0.05px 0.05px #000,
+    -0.05px 0 0.05px #000,
+    0 -0.05px 0.05px #000;
+}
+
+.main-module:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.1)
+}
+
+.module-description {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.subject-mod-desc {
+    display: flex;
+    flex-direction: row;
+}
+
+.ad-del-mod {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.ad-del-mod button {
+    width: 18px;
+    background: #bae5ff;
+    border: none;
+}
+
+.ad-del-mod button img:hover {
+    filter: invert(.3);
+}
+
+.approve-mod {
+    margin-left: 20px;
+    width: 100px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4ee24e;
+    font-weight: bold;
+    border-radius: 20px 90px 90px 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* fonts */
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Italic.eot');
+    src: local('Montserrat Italic'), local('Montserrat-Italic'),
+    url('../fonts/Montserrat-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Italic.woff') format('woff'),
+    url('../fonts/Montserrat-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.eot');
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat-Regular.woff') format('woff'),
+    url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,202 @@
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+header {
+    padding: 23px 0;
+}
+
+header .logo {
+    background: url("../img/SberUchitel_logo.svg") no-repeat center / contain;
+    width: 393px;
+    height: 51px;
+
+}
+
+
+
+.user {
+    display: flex;
+}
+
+.user a {
+    margin-left: 20px;
+}
+
+.user_controls {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.user_controls .add_module{
+    margin:0 80px ;
+}
+
+.search {
+    width: 100%;
+
+}
+
+.search_fd {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #A7A3A3;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50px;
+    z-index: 100;
+}
+
+.module {
+    margin-top: 20px;
+    padding: 15px 20px;
+    background: #D0EEFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.module_info {
+    display: flex;
+
+}
+
+.module .school_info {
+    display: flex;
+
+}
+
+.module .time {
+    margin: 0 40px;
+}
+
+.module .status {
+    margin-left: 20px;
+}
+
+.module .school_info .form {
+    margin-left: 20px;
+}
+
+.module .actions {
+    display: flex;
+}
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_wp {
+    position: relative;
+    flex-grow: 1;
+}
+
+.search_fd:focus {
+    border: 1px solid #A7A3A3;
+}
+
+.user_controls .controls {
+    flex-grow: 1;
+
+
+}
+
+.add_module {
+    max-width: 280px;
+    font-size: 17px;
+    height: 50px;
+    background: #D0EEFF;
+    border-radius: 10px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1120px;
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+
+.slidefrom-enter-active {
+    animation-name: slideFromRight;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.slidefrom-leave-active {
+    animation-name: slideToLeft;
+    animation-duration: .9s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.home_container {
+    position: relative;
+}
+
+.red {
+    background: red !important;
+}
+
+.green {
+    background: #30CE49 !important; ;
+
+}
+
+.yellow {
+    background: #FAF009 !important;
+
+}
+
+.main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+@keyframes slideFromRight {
+    from {
+        left: -100%;
+        opacity: 0;
+        z-index: 2;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+        z-index: 1;
+    }
+
+}
+
+@keyframes slideToLeft {
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 1;
+    }
+    to {
+        left: 100%;
+        z-index: 2;
+        opacity: 0;
+    }
+
+}
